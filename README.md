@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-bel/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-bel/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-bel/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-bel/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-bel/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-bel/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-bel/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-bel/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-bel/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-bel/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-bel/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-bel/build/coverage.html/index.html)
 
@@ -35,39 +35,19 @@
 ```json
 
 {
-    "name": "bel",
-    "version": "4.6.0",
-    "description": "A simple extension to native elements",
-    "main": "index.js",
-    "scripts": {
-        "start": "wzrd test/index.js:bundle.js",
-        "test": "standard && node test/server.js && browserify test/index.js | testron",
-        "bench": "wzrd bench/index.js:bundle.js"
+    "author": {
+        "name": "Kyle Robinson Young",
+        "url": "http://dontkry.com"
     },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/shama/bel"
-    },
-    "keywords": [
-        "virtual-dom",
-        "element",
-        "diffhtml"
-    ],
-    "files": [
-        "index.js",
-        "create.js"
-    ],
-    "author": "Kyle Robinson Young <kyle@dontkry.com> (http://dontkry.com)",
-    "license": "MIT",
     "bugs": {
         "url": "https://github.com/shama/bel/issues"
     },
-    "homepage": "https://github.com/shama/bel",
     "dependencies": {
         "global": "^4.3.0",
         "hyperx": "^2.3.0",
         "on-load": "^3.2.0"
     },
+    "description": "A simple extension to native elements",
     "devDependencies": {
         "browser-process-hrtime": "^0.1.2",
         "browserify": "^14.1.0",
@@ -77,7 +57,49 @@
         "tape": "^4.6.0",
         "testron": "^1.2.0",
         "wzrd": "^1.4.0"
-    }
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "3ade16e236ab2204d8d1c66eac4bd573793ac999",
+        "tarball": "https://registry.npmjs.org/bel/-/bel-4.6.0.tgz"
+    },
+    "files": [
+        "index.js",
+        "create.js"
+    ],
+    "gitHead": "67096071dfb3e4f1a38867cc18f1c6cf4a86f145",
+    "homepage": "https://github.com/shama/bel",
+    "keywords": [
+        "virtual-dom",
+        "element",
+        "diffhtml"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "chromakode"
+        },
+        {
+            "name": "shama"
+        },
+        {
+            "name": "yoshuawuyts"
+        }
+    ],
+    "name": "bel",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/shama/bel.git"
+    },
+    "scripts": {
+        "bench": "wzrd bench/index.js:bundle.js",
+        "start": "wzrd test/index.js:bundle.js",
+        "test": "standard && node test/server.js && browserify test/index.js | testron"
+    },
+    "version": "4.6.0",
+    "bin": {}
 }
 ```
 
